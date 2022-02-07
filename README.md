@@ -10,7 +10,7 @@ Example:
 lwcba.exe "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" -inPrivate
 ```
 
-When URL text is copied to clipboard, this command launches Edge in private mode with the URL.  If 'https://www.icann.org/' is copied to clipboard, ICANN web page is opened with Edge in private mode.
+When URL text is copied to clipboard, this command launches Edge in private mode with the URL.  If 'https://www.icann.org/' is on clipboard, ICANN web page is opened with Edge in private mode.
 
 
 If you want to use application with copied text or files, this may reduce some steps.
@@ -19,7 +19,17 @@ If you want to use application with copied text or files, this may reduce some s
 If you copy files in explorer, their paths are passed as arguments.
 
 
-By Making shortcut and specifying application path and args in target, you can open URLs(files) by 'copy URL => launch the shortcut'.
+By Making shortcut and specifying application path and args in target, you can set copied text or file paths by 'copy text => launch the shortcut'.
+
+
+## Install
+
+Copy lwcba.exe to a directory where you want to use.
+
+.exe is not signed(code signing), so the execution may be blocked.
+
+If you get the error that there is no Visual C Runtime, install it(https://aka.ms/vs/17/release/vc_redist.x64.exe or https://visualstudio.microsoft.com/downloads/)
+
 
 
 ## Restriction
