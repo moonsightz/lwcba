@@ -38,3 +38,8 @@ The application path to launch must be within 260 characters.
 
 
 With too long text or file path, it may fail (Buffer size is 32767).
+
+
+## Source code
+
+https://github.com/moonsightz/lwcba
