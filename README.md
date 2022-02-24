@@ -1,6 +1,6 @@
 # lwcba (Launch With ClipBoard data as Arguments)
 
-Windows application to launch application with clipboard data as arguments.
+Windows application(command) to launch application with clipboard data as arguments.
 
 ## What's this
 
@@ -34,7 +34,7 @@ If you get the error that there is no Visual C Runtime, install it(https://aka.m
 
 ## Restriction
 The application path to launch must be within 260 characters.
-(In programming language C, executed file path is set as `argv[0]`.  But, it seems like that `CreateProcessA()` does not pass it as `argv[0]` when `lpApplicationName` is set.  Ref. https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)
+(In programming language C, executed file path is set as `argv[0]`.  But, it seems that `CreateProcessA()` does not pass it as `argv[0]` when `lpApplicationName` is set.  https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-createprocessa)
 
 
 With too long text or file path, it may fail (Buffer size is 32767).
